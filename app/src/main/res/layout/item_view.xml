@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/rounded_corner"
+
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/title_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My title"
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/description_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_output"
+        android:text="My Description which is long long long "
+        android:textColor="#453E3E"></TextView>
+
+    <TextView
+        android:id="@+id/time_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description_output"
+        android:gravity="end"
+        android:text="time "
+        android:textColor="#453E3E"
+        android:textSize="12dp"></TextView>
+
+
+</RelativeLayout>

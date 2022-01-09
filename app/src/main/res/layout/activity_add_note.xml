@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5AA7E4"
+    android:orientation="vertical"
+    android:textAlignment="textStart"
+    tools:context=".Add_note">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Add new note"
+        android:textColor="#FBF8F8"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="312dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            android:textColor="#5E5C5C"
+            android:textColorHint="#514E4E" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="286dp"
+            android:layout_height="165dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Description.."
+            android:inputType="textPersonName"
+            android:lines="5"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"
+            android:textAlignment="gravity"
+            android:textColor="#5E5C5C"
+            android:textColorHint="#514E4E" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="SAVE NOTE"
+        android:textColor="#5AA7E4"
+        app:backgroundTint="#F1E6E6" />
+</LinearLayout>
